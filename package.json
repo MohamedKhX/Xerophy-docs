@@ -1,0 +1,14 @@
+{
+  "name": "xerophy-docs",
+  "version": "1.0.0",
+  "description": "Xerophy Documentation ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "docsify-cli": "^4.4.4"
+  }
+}
