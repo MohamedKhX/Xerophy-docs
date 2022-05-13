@@ -2,13 +2,13 @@
 
 To create a controller use the xerophy console command
 
-```javascript
+```php
 php xerophy.php make:controller {ControllerName}
 ```
 
 You will get something like this
 
-```javascript
+```php
 <?php
 
 namespace App\Controllers;
@@ -26,7 +26,7 @@ class HomeController extends Controller
 
 ### Render method
 This method is responsible to render a view
-```javascript
+```php
 <?php
 
 namespace App\Controllers;
@@ -44,7 +44,7 @@ class HomeController extends Controller
 
 ### Accepting the coming arguments
 
-```javascript
+```php
 <?php
 
 namespace App\Controllers;
@@ -61,7 +61,7 @@ class HomeController extends Controller
 
 ### Dependency injection in a method
 
-```javascript
+```php
 <?php
 
 namespace App\Controllers;
@@ -78,7 +78,7 @@ class HomeController extends Controller
 
 ### Accepting the coming arguments and Dependency injection
 
-```javascript
+```php
 <?php
 
 namespace App\Controllers;

@@ -6,6 +6,6 @@
 
 To create a model use the xerophy console command
 
-```javascript
+```php
 php xerophy.php make:model {ModelName}
 ```

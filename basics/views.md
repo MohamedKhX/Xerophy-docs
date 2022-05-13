@@ -3,7 +3,7 @@
 The views folder is in the resources' folder
 You can change the views folder by going to App folder you will find app.php
 in this file you can change the views place
-```javascript
+```php
 <?php
 /*
  * -------- Create The Application --------

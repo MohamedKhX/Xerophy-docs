@@ -5,7 +5,7 @@ To define routes go to routes folder in web.php and register your routes there.
 The most basic Xerophy routes accept a URI and a Closure,
 providing a very simple and expressive method of defining routes:
 
-```javascript
+```php
 $router->get('/uri', function() {
     echo 'hello world';
 });
@@ -13,13 +13,13 @@ $router->get('/uri', function() {
 
 **And you can use a controller instead of a callback function**
 
-```javascript
+```php
 $router->get('/uri', [HomeController::class, 'methodName']);
 ```
 
 #### You can also name your routes using name method    
 
-```javascript
+```php
 $router->get('/uri', [HomeController::class, 'methodName'])->name('RouteName');
 ```
 
@@ -27,7 +27,7 @@ $router->get('/uri', [HomeController::class, 'methodName'])->name('RouteName');
 #### Available Router Methods
 
 
-```javascript
+```php
 $router->get('/uri',    [HomeController::class, 'methodName']);
 $router->post('/uri',   [HomeController::class, 'methodName']);
 $router->put('/uri',    [HomeController::class, 'methodName']);
@@ -36,20 +36,20 @@ $router->delete('/uri', [HomeController::class, 'methodName']);
 
 
 #### View routes
-```javascript
+```php
 $router->view('/uri', 'viewName');
 ```
 
 
 ### Route parameters
 
-```javascript
+```php
 $router->get('/uri/:id', [HomeController::class, 'show']);
 ```
 
 You may define as many route parameters as required by your route:
 
-```javascript
+```php
 $router->get('/post/:id/comment/:comment', [PostsController::class, 'show']);
 ```
 
@@ -57,7 +57,7 @@ $router->get('/post/:id/comment/:comment', [PostsController::class, 'show']);
 ### After and Before Events
 you can run a callback function before or after the main function 
 
-```javascript
+```php
 $router->get('/post/:id', [PostsController::class, 'show'])
 ->after(function() {
     echo 'After';
@@ -69,7 +69,7 @@ $router->get('/post/:id', [PostsController::class, 'show'])
 
 ### Dependency injection in the callback function
 
-```javascript
+```php
 $router->get('/post/:id', function(Request $request) {
     
 });
